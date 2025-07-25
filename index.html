@@ -1,0 +1,84 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3S Energia Solar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+    body { background: #0f1115; color: #e0e0e0; padding: 40px; }
+    .container { max-width: 960px; margin: auto; background: #1b1f24; border-radius: 12px; padding: 40px; box-shadow: 0 0 15px rgba(0,0,0,0.5); }
+    h1 { font-size: 2.5rem; color: #39aa56; margin-bottom: 20px; }
+    nav { margin-bottom: 30px; display: flex; gap: 16px; flex-wrap: wrap; }
+    nav button { background: #27303d; border: none; color: #cfd8e3; padding: 10px 20px; border-radius: 8px; cursor: pointer; transition: 0.3s; }
+    nav button:hover { background: #374553; }
+    .section { margin-bottom: 30px; }
+    .label { font-weight: 600; color: #8b9cb5; display: block; margin-top: 10px; }
+    .value { margin-left: 10px; color: #e0e0e0; }
+    .highlight { color: #4ad895; font-weight: bold; }
+    ul { margin-top: 15px; line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>3S Energia Solar</h1>
+    <nav>
+      <button onclick="scrollTo('servicos')">Serviços</button>
+      <button onclick="scrollTo('dados')">Dados da Empresa</button>
+      <button onclick="scrollTo('endereco')">Endereço</button>
+      <button onclick="scrollTo('contato')">Contato</button>
+      <button onclick="scrollTo('socios')">Sócio</button>
+    </nav>
+
+    <div id="servicos" class="section">
+      <h2>🔧 Principais Serviços e Atuação</h2>
+      <p>A <strong>3S Comércio e Instalação de Energia Solar LTDA</strong>, nome fantasia <em>3S Energia Solar</em>, atua intensamente no segmento elétrico em Joinville/SC desde março de 2021. Especializada na instalação e manutenção elétrica de sistemas prediais, também oferece:</p>
+      <ul>
+        <li>Instalação de painéis fotovoltaicos e sistemas de energia solar</li>
+        <li>Manutenção preventiva e corretiva de instalações elétricas residenciais e comerciais</li>
+        <li>Comércio de material elétrico: fios, cabos, tomadas, lâmpadas e acessórios</li>
+        <li>Promoção de vendas, intermediação de serviços e agenciamento de negócios</li>
+        <li>Atendimento técnico especializado, suporte e diagnóstico energético</li>
+      </ul>
+    </div>
+
+    <div id="dados" class="section">
+      <h2>📄 Dados da Empresa</h2>
+      <span class="label">Razão Social:</span><span class="value">3S Comércio e Instalação de Energia Solar LTDA</span><br>
+      <span class="label">Nome Fantasia:</span><span class="value">3S Energia Solar</span><br>
+      <span class="label">CNPJ:</span><span class="value">41.131.852/0001‑03</span><br>
+      <span class="label">Situação:</span><span class="value highlight">ATIVA</span><br>
+      <span class="label">Data de Abertura:</span><span class="value">08/03/2021</span><br>
+      <span class="label">Capital Social:</span><span class="value">R$ 10.000,00</span><br>
+      <span class="label">Natureza Jurídica:</span><span class="value">Sociedade Empresária Limitada (ME)</span><br>
+      <span class="label">Opção Simples:</span><span class="value">Sim, desde 08/03/2021</span><br>
+    </div>
+
+    <div id="endereco" class="section">
+      <h2>📍 Endereço</h2>
+      <span class="label">Logradouro:</span><span class="value">Rua Barbalho, 59 – Sala 15</span><br>
+      <span class="label">Bairro:</span><span class="value">Boa Vista</span><br>
+      <span class="label">Município:</span><span class="value">Joinville – SC</span><br>
+      <span class="label">CEP:</span><span class="value">89205‑600</span><br>
+    </div>
+
+    <div id="contato" class="section">
+      <h2>📞 Contato</h2>
+      <span class="label">Telefone / WhatsApp:</span><span class="value">(47) 98483‑5147</span><br>
+      <span class="label">E-mail:</span><span class="value">genesio.bortolotto@gmail.com</span><br>
+    </div>
+
+    <div id="socios" class="section">
+      <h2>🧑‍💼 Sócio-Administrador</h2>
+      <span class="label">Nome:</span><span class="value">Genesio Bortolotto</span><br>
+      <span class="label">Cargo:</span><span class="value">Sócio‑Administrador</span><br>
+      <span class="label">Data de entrada:</span><span class="value">08/03/2021</span><br>
+    </div>
+  </div>
+  <script>
+    function scrollTo(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
